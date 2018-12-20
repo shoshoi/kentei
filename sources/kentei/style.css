@@ -1,0 +1,159 @@
+body{
+	background: #FFFFFF url(images/bg.gif);
+	height:100%;
+	margin:0 0 0 0;
+	text-align: center;
+}
+
+#conteiner{
+	width:820px;
+    min-height: 90%;
+    height:auto !important;  
+    height: 90%;
+	background:#FFFFFF;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding:10px 10px 20px 10px;
+	text-align: left;
+}
+
+#login{
+	margin-top:50px;
+	padding:10px;
+	width:450px;
+	background: #FFFFFF;
+	border: 1px #ffa500 solid;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+}
+
+#login h2{
+
+}
+#header{
+	float:right;
+	text-align:right;
+}
+#header p{
+	text-align:right;
+}
+#conteiner h1{
+	font-size:16pt;
+	text-align:left;
+	clear:right;
+}
+#main{
+	font-size:16px;
+}
+#main a:link { color: #0000ff; }
+#main a:visited { color: #0000ff; }
+#main a:hover { color: #ff0000; }
+#main a:active { color: #ff8000; }
+#main h2{
+	font-size:24px;
+	margin:20px 0;
+}
+#main h3{
+	margin:10px 0 10px 0;
+	padding:0px 0px 1px 5px;
+	color:#31001D;
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px solid #ffa500;
+	border-left:5px solid #ffa500;
+}
+#sitemap dl{
+	font-size:14px;
+}
+#sitemap dt{
+	margin : 10px 0;
+}
+#sitemap dd{
+	margin : 0 0 10px 50px;
+}
+.clearleft{
+	clear:left;
+	margin:0;
+	padding:0;
+}
+.clearleft hr { display:none; }  
+#datebox p{
+
+}
+#msg{
+	width:300px;
+	height:40px;
+	line-height: 40px;
+	border-style:double;
+	border-color:#808080;
+	border-width:4px;
+		text-align: center;
+			font-size:14px;
+	font-weight:bold;
+	color: #ef0000;
+}
+#msg p{
+	margin:0;
+	padding:0;
+}
+table.hitable tr.hv td {
+	background-color: #D7D7D7;
+}
+table.hitable{
+    border-top:1px solid #663300;
+    border-left:1px solid #663300;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#ffffff;
+    empty-cells:show;
+}
+table.hitable th{
+    border-right:1px solid #663300;
+    border-bottom:1px solid #663300;
+    color:#FFFFFF;
+    background-color:#996633;
+    padding:0.3em 1em;
+    text-align:center;
+}
+table.hitable td{
+    border-right:1px solid #663300;
+    border-bottom:1px solid #663300;
+    padding:0.3em 1em;
+}
+table.inputs tr td{
+	height: 30px;
+}
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; list-style: none;margin:0; padding: 0; }
+ul.dropdown li                      {text-align: center; color:#fff; width:200;height:30; font-weight: bold; float: left; zoom: 1; background: #FFA500;  list-style: none; border-right: 1px solid #333;}
+ul.dropdown a:hover		            { color: #000; }
+ul.dropdown a:active                { color: #ff0000; }
+ul.dropdown li a                    { display: block; padding: 8px 8px;
+	 								  color: #ffffff;  text-decoration: none;}
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: #FFA500; color: 000; position: relative; }
+ul.dropdown li.hover a              { color: black;  text-decoration: none;}
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{width:200px; font-weight: normal; background: #f6f6f6; color: #000; 
+									  border-bottom: 1px solid #ccc; float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block;  text-decoration: none;} 
+ul.dropdown	ul li a:visited 				{ color: #000; }
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }

@@ -1,0 +1,371 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5"> 
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>kentei.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>kentei.Logout</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>MainteUser_update</servlet-name>
+		<servlet-class>kentei.MainteUser_update</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MainteUser_update</servlet-name>
+		<url-pattern>/mainteuser_update</url-pattern>
+	</servlet-mapping>
+			
+	<servlet>
+		<servlet-name>St_main</servlet-name>
+		<jsp-file>/student/st_main.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>St_main</servlet-name>
+		<url-pattern>/st_main</url-pattern>	
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>St_getTest</servlet-name>
+		<servlet-class>kentei.st.St_getTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>St_getTest</servlet-name>
+		<url-pattern>/st_gettest</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>St_addTest</servlet-name>
+		<servlet-class>kentei.st.St_addTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>St_addTest</servlet-name>
+		<url-pattern>/st_addtest</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>St_addTest_add</servlet-name>
+		<servlet-class>kentei.st.St_addTest_add</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>St_addTest_add</servlet-name>
+		<url-pattern>/st_addtest_add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>St_addTest_get</servlet-name>
+		<servlet-class>kentei.st.St_addTest_get</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>St_addTest_get</servlet-name>
+		<url-pattern>/st_addtest_get</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>St_remTest</servlet-name>
+		<servlet-class>kentei.st.St_remTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>St_remTest</servlet-name>
+		<url-pattern>/st_remtest</url-pattern>
+	</servlet-mapping>
+			
+	<servlet>
+		<servlet-name>St_MainteUser</servlet-name>
+		<jsp-file>/student/st_mainteuser.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>St_MainteUser</servlet-name>
+		<url-pattern>/st_mainteuser</url-pattern> 
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_main</servlet-name>
+		<jsp-file>/manager/mg_main.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_main</servlet-name>
+		<url-pattern>/mg_main</url-pattern>	
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mg_StSearchTest</servlet-name>
+		<servlet-class>kentei.mg.Mg_StSearchTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_StSearchTest</servlet-name>
+		<url-pattern>/mg_stsearchtest</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mg_StSearchTest_get</servlet-name>
+		<servlet-class>kentei.mg.Mg_StSearchTest_get</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_StSearchTest_get</servlet-name>
+		<url-pattern>/mg_stsearchtest_get</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_TestSearchSt</servlet-name>
+		<servlet-class>kentei.mg.Mg_TestSearchSt</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_TestSearchSt</servlet-name>
+		<url-pattern>/mg_testsearchst</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mg_TestSearchSt_get</servlet-name>
+		<servlet-class>kentei.mg.Mg_TestSearchSt_get</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_TestSearchSt_get</servlet-name>
+		<url-pattern>/mg_testsearchst_get</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mg_MainteStmaster</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteStmaster</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteStmaster</servlet-name>
+		<url-pattern>/mg_maintestmaster</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_MainteStmaster_get</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteStmaster_get</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteStmaster_get</servlet-name>
+		<url-pattern>/mg_maintestmaster_get</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Mg_MainteStmaster_check</servlet-name>
+		<jsp-file>/manager/mg_maintestmaster_check.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteStmaster_check</servlet-name>
+		<url-pattern>/mg_maintestmaster_check</url-pattern> 
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_MainteStmaster_update</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteStmaster_update</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteStmaster_update</servlet-name>
+		<url-pattern>/mg_maintestmaster_update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mg_MainteStmaster_updaterev</servlet-name>
+		<jsp-file>/manager/mg_maintestmaster_updaterev.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteStmaster_updaterev</servlet-name>
+		<url-pattern>/mg_maintestmaster_updaterev</url-pattern>	
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mg_MainteTestmaster</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteTestmaster</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteTestmaster</servlet-name>
+		<url-pattern>/mg_maintetestmaster</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Mg_MainteTestmaster_get</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteTestmaster_get</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteTestmaster_get</servlet-name>
+		<url-pattern>/mg_maintetestmaster_get</url-pattern>
+	</servlet-mapping>
+			
+	<servlet>
+		<servlet-name>Mg_MainteTestmaster_check</servlet-name>
+		<jsp-file>/manager/mg_maintetestmaster_check.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteTestmaster_check</servlet-name>
+		<url-pattern>/mg_maintetestmaster_check</url-pattern> 
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_MainteTestmaster_update</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteTestmaster_update</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteTestmaster_update</servlet-name>
+		<url-pattern>/mg_maintetestmaster_update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mg_MainteTestmaster_updaterev</servlet-name>
+		<jsp-file>/manager/mg_maintetestmaster_updaterev.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteTestmaster_updaterev</servlet-name>
+		<url-pattern>/mg_maintetestmaster_updaterev</url-pattern>	
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mg_MainteTestmaster_delete</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteTestmaster_delete</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteTestmaster_delete</servlet-name>
+		<url-pattern>/mg_maintetestmaster_delete</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_Testdate</servlet-name>
+		<servlet-class>kentei.mg.Mg_Testdate</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_Testdate</servlet-name>
+		<url-pattern>/mg_testdate</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_Testdate_get</servlet-name>
+		<servlet-class>kentei.mg.Mg_Testdate_get</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_Testdate_get</servlet-name>
+		<url-pattern>/mg_testdate_get</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_Testdate_add</servlet-name>
+		<servlet-class>kentei.mg.Mg_Testdate_add</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_Testdate_add</servlet-name>
+		<url-pattern>/mg_testdate_add</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_Testdate_delete</servlet-name>
+		<servlet-class>kentei.mg.Mg_Testdate_delete</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_Testdate_delete</servlet-name>
+		<url-pattern>/mg_testdate_delete</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_MainteAssocimaster</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteAssocimaster</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteAssocimaster</servlet-name>
+		<url-pattern>/mg_mainteassocimaster</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_MainteAssocimaster_update</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteAssocimaster_update</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteAssocimaster_update</servlet-name>
+		<url-pattern>/mg_mainteassocimaster_update</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Mg_MainteAssocimaster_delete</servlet-name>
+		<servlet-class>kentei.mg.Mg_MainteAssocimaster_delete</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteAssocimaster_delete</servlet-name>
+		<url-pattern>/mg_mainteassocimaster_delete</url-pattern>
+	</servlet-mapping>
+			
+	<servlet>
+		<servlet-name>Mg_MainteUser</servlet-name>
+		<jsp-file>/manager/mg_mainteuser.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Mg_MainteUser</servlet-name>
+		<url-pattern>/mg_mainteuser</url-pattern> 
+	</servlet-mapping>
+	
+	<error-page>
+		<error-code>403</error-code>
+		<location>/error/403.html</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/404.html</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>405</error-code>
+		<location>/error/405.html</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error/500.html</location>
+	</error-page>
+	
+</web-app>
+
+

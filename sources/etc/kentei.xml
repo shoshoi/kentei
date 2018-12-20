@@ -1,0 +1,11 @@
+<Context path="/kentei" reloadable="true" >
+	<Resource auth="Container"
+		driverClassName="com.mysql.jdbc.Driver"
+		maxActive="20" macIdle="10" maxWait="-1"
+		name="jdbc/MySQL"
+		type="javax.sql.DataSource"
+		url="jdbc:mysql://localhost/db1101762"
+		username=""
+		password=""
+	/>
+</Context>
